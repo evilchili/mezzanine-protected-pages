@@ -17,6 +17,7 @@ INSTALLED_APPS = (
 )
 ```
 
+Don't forget to syncdb and migrate or whatever.
 
 Usage
 -----
