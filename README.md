@@ -27,7 +27,7 @@ Selecting one-or-many groups will restrict access to the page to users who are m
 that group.  
 
 If a user who is not logged in attempts to access a protect page, they will be redirected to 
-the login page (as defined by `settings.LOGIN\_URL`). Users who are already logged in, but not 
+the login page (as defined by `settings.LOGIN_URL`). Users who are already logged in, but not 
 members of at least one of the specified groups, will get a 403 error.
 
 License
