@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load mezzanine_tags %}
+{% comment %}
+
+templates/pages/protectedpage.html
+	-- custom page template for protected pages (behaves just like a regular richtext page)
+
+{% endcomment %}
+{% block main %}
+	{{ block.super }}
+	{% editable page.protectedpage.content %}
+		{{ page.protectedpage.content| richtext_filters | safe }}
+	{% endeditable %}
+{% endblock %}
